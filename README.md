@@ -20,7 +20,9 @@ tt.sh en # not translating, but get a definition of word in english (useless for
 ### installation
 
 1. "git clone" to ~/bin/
-2. Add to PATH: export PATH="$HOME/bin/translate-shell-script:$PATH"
-3. type command "source .zshrc/.bashrc"
-4. ???
-5. Enjoy yourself =)''
+2. Make tt.sh executable (chmod +x)
+3. Add to PATH: export PATH="$HOME/bin/translate-shell-script:$PATH"
+4. Remove .sh extension from tt.sh
+5. Type command "source .zshrc/.bashrc"
+6. ???
+7. Enjoy yourself =)''
