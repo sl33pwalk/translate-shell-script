@@ -1,6 +1,6 @@
 # translate-shell-script
 
-```
+```bash
 tt.sh <lang(optional)> <text>
 ```
 
@@ -8,11 +8,19 @@ tt.sh <lang(optional)> <text>
 
 ### language options:
 
+```bash
+tt.sh "maintain" # default: translate english to russian
+
+tt.sh ru # translate russian text to english
+
+tt.sh en # not translating, but get a definition of word in english (useless for sentences)
+
 ```
-tt.sh "maintain" // default: translate english to russian
 
-tt.sh ru // translate russian text to english
+### installation
 
-tt.sh en // not translating, but get a definition of word in english (useless for sentences)
-
-```
+1. "git clone" to ~/bin/
+2. Add to PATH: export PATH="$HOME/bin/translate-shell-script:$PATH"
+3. type command "source .zshrc/.bashrc"
+4. ???
+5. Enjoy yourself =)''
