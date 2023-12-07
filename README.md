@@ -26,3 +26,14 @@ tt.sh en # not translating, but get a definition of word in english (useless for
 5. Type command "source .zshrc/.bashrc"
 6. ???
 7. Enjoy yourself =)''
+
+
+example:
+```bash
+[furikuri444@themaid ~]$ tt en linux
+linux
+
+noun
+    an open-source operating system modelled on UNIX.
+[furikuri444@themaid ~]$
+```
