@@ -20,6 +20,14 @@ if [ "$#" -ge 1 ]; then
     fi
 fi
 
-# Перевести текст с помощью translate-shell
-trans "$direction" "$@"
+full_translation=$(trans "$direction" "$@")
 
+brief_translation=$(trans -b "$direction" "$@")
+
+# Заменить escape-коды и записать текст и полный перевод в файл
+echo "Текст: $@" | sed -e 's/\x1B\[[0-9;]*[JKmsu]//g' >> translations.txt
+echo "Перевод: $brief_translation" | sed -e 's/\x1B\[[0-9;]*[JKmsu]//g' >> translations.txt
+
+echo "=====================================" >> translations.txt
+
+echo "Перевод: $full_translation"
