@@ -4,7 +4,7 @@
 tt <lang(optional)> <text>
 ```
 
-* translate-text - Just simple framework for translate-shell that makes it better for use!
+* translate-text - Just simple framework for translate-shell that makes it more pleasant to use!
 
 ### Features:
 
