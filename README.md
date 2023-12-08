@@ -4,7 +4,13 @@
 tt <lang(optional)> <text>
 ```
 
-* translate-text - Just simple script for translate-shell that makes it better for use! Supports only english and russian languages. 
+* translate-text - Just simple framework for translate-shell that makes it better for use!
+
+### Features:
+
++ writing translated text in translate.txt in root directory of script.
++ abbreviated script name
++ supports en and ru languages
 
 ### language options:
 
@@ -25,22 +31,18 @@ tt en "maintain" # not translating, but get a definition of word in english (use
    ```
 3. Make script executable
    ```
-    chmod +x ~/bin/translate-shell-script/tt.sh
+    chmod +x ~/bin/translate-shell-script/tt
    ```
 5. Add to PATH:
    ```bash
    export PATH="$HOME/bin/translate-shell-script:$PATH"
    ```
-6. Remove .sh extension from tt.sh
-   ```bash
-    mv ~/bin/translate-shell-script/tt.sh ~/bin/translate-shell-script/tt 
-   ```
-8. Type command
+6. Type command
    ```bash
    source .zshrc # or .bashrc"
    ```
-9. ???
-10. Enjoy yourself =)
+7. ???
+8. Enjoy yourself =)
 
 
 example:
